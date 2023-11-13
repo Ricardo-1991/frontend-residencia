@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+#list1 a{
+    color: red;
+    font-size: 11px
+}
+
+
+#list2 a {
+    color: black;
+    font-size: 20px;
+}
+
+
+#list3 a{    
+    color: greenyellow;
+}
+
+li {
+    text-indent: 70px;  
+}
