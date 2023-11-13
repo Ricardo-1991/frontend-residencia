@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#caixa-externa {
+    background-color: brown;
+}
+
+.caixa {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+
+.caixa-interna {
+    background-color: red;
+    padding:1px;
+}
+
+p {
+    color: yellow;
+}
