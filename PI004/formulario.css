@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2ced32;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1faa1f;
+}
+
+#containerDestinos {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#containerDestinos div {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#containerDestinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    background-color: #EBE5F9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    color: #6728fa;
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card header img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.card header h3 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card main {
+    padding: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card ul li {
+    padding: 8px 0;
+    margin-left: 15px;
+    font-family: "OpenSans";
+}
+
+.card div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.card span {
+    display: block;
+    margin-top: 5px;
+}
+
+.card ul li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card ul li::before {
+    content: '\2713'; 
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.card button {
+    background-color: #2ced32;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #1faa1f; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
