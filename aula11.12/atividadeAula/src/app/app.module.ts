@@ -3,21 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
-import { AraraComponent } from './arara/arara.component';
-import { FormsModule } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TableComponent,
-    AraraComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
