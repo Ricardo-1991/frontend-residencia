@@ -3,7 +3,7 @@ async function fetchWeather() {
         const apiKEY = "36d074bcb680fc5cd2508f727e951ce9"
         const lat = -14.796746039624054
         const lon = -39.173382403501456
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKEY}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKEY}`);
         const data = await response.json();   
         return data
     }catch(err){
@@ -37,3 +37,20 @@ async function getNews(){
     }
 }
 getNews()
+
+async function getWeather() {
+    const data = await fetchWeather()
+    const temperature = document.querySelector("#temp")
+    const humidity = document.querySelector("#humidity")
+    const maxTemp = document.querySelector("#maxTemp")
+    const minTemp = document.querySelector("#minTemp")
+    const weatherIcon = document.querySelector("#weatherIcon")
+
+    temperature.innerText = parseInt(data.main.temp) + " Cº"
+    humidity.innerText = data.main.humidity
+    maxTemp.innerText = parseInt(data.main.temp_max)+ " Cº"
+    minTemp.innerText = parseInt(data.main.temp_min)+ " Cº"
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
+}
+
+getWeather()
