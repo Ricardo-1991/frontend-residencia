@@ -16,17 +16,24 @@ async function fetchNews(){
         const apiKEY = "2868608890534b5899f08f2c292c3292"
         const response = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2023-11-13&sortBy=publishedAt&apiKey=${apiKEY}`)
         const data = await response.json();
-        console.log(data);
-    
+        return data;
 
     }catch(err){
         console.error(err);
     }
 }
 
-async function getWeather(){
-    const weatherApi = await fetchWeather()
-    
+async function getNews(){
+    const data = await fetchNews()
+    console.log(data)
+    const containerLists = document.querySelector("#newsListContainer")
+    for(let i = 0; i < 3; i++){
+        containerLists.innerHTML += 
+        `<li> 
+            <h3> ${data.articles[i].title}</h3>
+            <p>${data.articles[i].description}</p>
+        </li>
+        `
+    }
 }
-
-news()
+getNews()
