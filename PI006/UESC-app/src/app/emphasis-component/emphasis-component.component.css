@@ -1,0 +1,9 @@
+.emphasis-section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emphasis-section img {
+  width: 6.25rem;
+}

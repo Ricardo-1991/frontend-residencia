@@ -1,0 +1,8 @@
+.services-results-container {
+  display: grid;
+  grid-template-columns: 2fr 3.064fr;
+  gap: 1rem;
+  width: 1175px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
