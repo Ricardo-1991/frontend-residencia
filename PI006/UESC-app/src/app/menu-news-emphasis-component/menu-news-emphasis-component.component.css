@@ -1,0 +1,8 @@
+.menu-news-emphasis-container{
+  display: grid;
+  grid-template-columns: 2fr 2.41fr 0.5fr;
+  gap: 1rem;
+  width: 1175px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}

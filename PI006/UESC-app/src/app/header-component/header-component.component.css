@@ -1,0 +1,13 @@
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #dfedfd;
+  padding: 1.875rem;
+}
+
+/* Estilos para a imagem no cabeçalho */
+header img {
+  width: 5.625rem;
+}
