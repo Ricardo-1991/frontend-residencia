@@ -1,0 +1,43 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.results {
+  margin: 10px;
+}
+
+.results h2 {
+  color: #007bff;
+}
+
+.results h3 {
+  margin: 0;
+}
+
+.results p {
+  margin: 5px 0;
+}
+
+.results a {
+  color: #007bff;
+  text-decoration: none;
+}
