@@ -1,0 +1,13 @@
+<div>
+  <h2>Categorias</h2>
+  <ul>
+    <li *ngFor="let categoria of categorias" (click)="selecionarCategoria(categoria)">
+      {{ categoria }}
+    </li>
+  </ul>
+</div>
+
+<app-classes (categoriaSelecionada)="selecionarCategoria($event)"></app-classes>
+<app-objetos [categoriaSelecionada]="categoriaSelecionada"></app-objetos>
+<app-propriedades></app-propriedades>
+<app-carrinho [veiculosSelecionados]="selectedVehicles"></app-carrinho>
